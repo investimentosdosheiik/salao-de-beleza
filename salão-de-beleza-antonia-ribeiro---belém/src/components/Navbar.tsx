@@ -42,13 +42,13 @@ export const Navbar: React.FC<NavbarProps> = ({
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-2 sm:gap-4">
           {/* Brand Logo */}
-          <a href="#" className="flex flex-col group">
-            <span className="font-serif-display text-xl sm:text-2xl font-bold tracking-tight text-stone-900 group-hover:text-[#A37D50] transition-colors">
+          <a href="#" className="flex flex-col group min-w-0 flex-1 lg:flex-none">
+            <span className="font-serif-display text-[clamp(1rem,4.2vw,1.5rem)] sm:text-2xl font-bold tracking-tight leading-tight text-stone-900 group-hover:text-[#A37D50] transition-colors">
               SALÃO ANTÔNIA RIBEIRO
             </span>
-            <span className="text-[10px] tracking-[0.22em] uppercase font-semibold text-stone-500 -mt-0.5">
+            <span className="text-[9px] sm:text-[10px] tracking-[0.16em] sm:tracking-[0.22em] uppercase font-semibold text-stone-500 -mt-0.5">
               Estética · Saúde · Beleza · Belém (Marco)
             </span>
           </a>
@@ -67,7 +67,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </nav>
 
           {/* Right Action buttons */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
             {/* Quick config for phone */}
             <button
               onClick={onOpenSettings}
@@ -81,14 +81,14 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Direct WhatsApp Call to Action Button */}
             <button
               onClick={() => onOpenBooking()}
-              className="inline-flex items-center gap-2 bg-[#1B8049] hover:bg-[#15693C] text-white text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2.5 rounded-md shadow-sm hover:shadow transition-all duration-200 group active:scale-[0.98] cursor-pointer"
+              className="inline-flex items-center gap-2 bg-[#1B8049] hover:bg-[#15693C] text-white text-[11px] sm:text-sm font-semibold px-2.5 sm:px-5 py-2.5 rounded-md shadow-sm hover:shadow transition-all duration-200 group active:scale-[0.98] cursor-pointer"
             >
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-200 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-300"></span>
               </span>
               <MessageCircle className="w-4 h-4 transition-transform group-hover:scale-110" />
-              <span>Agendar no WhatsApp</span>
+              <span className="hidden min-[390px]:inline">Agendar no WhatsApp</span>
             </button>
 
             {/* Mobile menu hamburger */}
