@@ -88,7 +88,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-300"></span>
               </span>
               <MessageCircle className="w-4 h-4 transition-transform group-hover:scale-110" />
-              <span className="hidden min-[390px]:inline">Agendar no WhatsApp</span>
+              <span className="hidden sm:inline">Agendar no WhatsApp</span>
             </button>
 
             {/* Mobile menu hamburger */}
