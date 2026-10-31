@@ -81,9 +81,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, whatsAppNumber }) => 
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Local Micro-bar */}
-        <div className="flex flex-wrap items-center justify-between gap-3 text-xs text-stone-600 mb-4 pb-2 border-b border-stone-200/60">
-          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-            <span className="inline-flex items-center gap-1.5 font-semibold text-stone-800">
+        <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center sm:justify-between gap-2 sm:gap-3 text-xs text-stone-600 mb-4 pb-3 border-b border-stone-200/60">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-2 sm:gap-3 min-w-0">
+            <span className="inline-flex items-start sm:items-center gap-1.5 font-semibold text-stone-800 min-w-0">
               <MapPin className="w-3.5 h-3.5 text-[#A37D50]" />
               Tv. Dr. Enéas Pinheiro, 2672 – Bairro do Marco · Belém - PA
             </span>
@@ -105,7 +105,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, whatsAppNumber }) => 
             </a>
           </div>
 
-          <div className="flex items-center gap-3 text-[11px] text-stone-500">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-stone-500">
             <span className="inline-flex items-center gap-1 text-stone-700 font-medium">
               <Phone className="w-3 h-3 text-[#1B8049]" />
               Fixo: {SALON_DATA.phoneLandline}
@@ -157,12 +157,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, whatsAppNumber }) => 
           </div>
 
           {/* Interactive Photo Switcher Tabs underneath Banner */}
-          <div className="p-2 sm:p-2.5 bg-stone-100/90 border-t border-stone-200 flex items-center justify-start sm:justify-center gap-1.5 overflow-x-auto scrollbar-none">
+          <div className="p-2 sm:p-2.5 bg-stone-100/90 border-t border-stone-200 flex flex-nowrap items-center justify-start sm:justify-center gap-2 overflow-x-auto overscroll-x-contain scrollbar-none snap-x snap-mandatory">
             {bannerSlides.map((slide, idx) => (
               <button
                 key={slide.id}
                 onClick={() => setActiveBannerIdx(idx)}
-                className={`whitespace-nowrap px-3 sm:px-4 py-1.5 text-xs font-semibold rounded-lg transition-all cursor-pointer flex items-center gap-1.5 ${
+                className={`shrink-0 snap-start whitespace-nowrap px-3 sm:px-4 py-2 text-xs font-semibold rounded-lg transition-all cursor-pointer flex items-center gap-1.5 ${
                   activeBannerIdx === idx
                     ? 'bg-stone-900 text-white shadow-xs'
                     : 'bg-white/80 hover:bg-white text-stone-700 hover:text-stone-950 border border-stone-200'
