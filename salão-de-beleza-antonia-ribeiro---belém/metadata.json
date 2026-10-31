@@ -1,0 +1,6 @@
+{
+  "name": "Salão de Beleza Antonia Ribeiro - Belém",
+  "description": "Landing page de alta conversão para o Salão de Beleza Antonia Ribeiro no bairro do Marco, Belém - PA. Agendamentos rápidos via WhatsApp, catálogo de serviços e galeria de fotos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
