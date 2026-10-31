@@ -157,7 +157,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, whatsAppNumber }) => 
           </div>
 
           {/* Interactive Photo Switcher Tabs underneath Banner */}
-          <div className="p-2 sm:p-2.5 bg-stone-100/90 border-t border-stone-200 flex flex-nowrap items-center justify-start sm:justify-center gap-2 overflow-x-auto overscroll-x-contain scrollbar-none snap-x snap-mandatory">
+          <div className="hero-gallery-tabs p-2 sm:p-2.5 bg-stone-100/90 border-t border-stone-200 flex flex-nowrap items-center justify-start sm:justify-center gap-2 overflow-x-auto overscroll-x-contain scrollbar-none snap-x snap-mandatory">
             {bannerSlides.map((slide, idx) => (
               <button
                 key={slide.id}
