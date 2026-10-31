@@ -36,3 +36,34 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #bfa58e;
 }
+
+
+/* Mobile layout safeguards */
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  overflow-x: clip;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 640px) {
+  * {
+    min-width: 0;
+  }
+
+  .font-serif-display {
+    overflow-wrap: anywhere;
+  }
+
+  section {
+    max-width: 100%;
+  }
+}
