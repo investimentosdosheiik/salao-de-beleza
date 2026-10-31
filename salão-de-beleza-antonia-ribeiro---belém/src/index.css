@@ -6,6 +6,12 @@
     --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   }
 
+  html, body, #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   html {
     scroll-behavior: smooth;
     font-family: var(--font-sans);
@@ -65,5 +71,34 @@ iframe {
 
   section {
     max-width: 100%;
+  }
+}
+
+
+/* Final mobile polish */
+.hero-gallery-tabs {
+  width: 100%;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.hero-gallery-tabs::-webkit-scrollbar {
+  display: none;
+}
+.hero-gallery-tabs > button {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+@media (max-width: 639px) {
+  .hero-gallery-tabs {
+    justify-content: flex-start;
+  }
+  .hero-gallery-tabs > button {
+    min-height: 42px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
