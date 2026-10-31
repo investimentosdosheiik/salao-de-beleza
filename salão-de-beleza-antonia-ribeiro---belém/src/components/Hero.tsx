@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Star, MessageCircle, Sparkles, MapPin, CheckCircle2, ShieldCheck, ArrowRight, Calendar, User, Phone, Camera, Check } from 'lucide-react';
+import { Star, MessageCircle, Sparkles, CheckCircle2, ShieldCheck, ArrowRight, Calendar, User, Phone, Camera, Check } from 'lucide-react';
 import { SALON_DATA } from '../data/salonData';
 
 interface HeroProps {
@@ -83,10 +83,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, whatsAppNumber }) => 
         {/* Top Local Micro-bar */}
         <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center sm:justify-between gap-2 sm:gap-3 text-xs text-stone-600 mb-4 pb-3 border-b border-stone-200/60">
           <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-2 sm:gap-3 min-w-0">
-            <span className="inline-flex items-start sm:items-center gap-1.5 font-semibold text-stone-800 min-w-0">
-              <MapPin className="w-3.5 h-3.5 text-[#A37D50]" />
-              Tv. Dr. Enéas Pinheiro, 2672 – Bairro do Marco · Belém - PA
-            </span>
             <span aria-hidden="true" className="text-stone-300 hidden sm:inline">·</span>
             <a
               href={SALON_DATA.googleMapsUrl}
